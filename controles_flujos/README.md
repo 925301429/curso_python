@@ -14,3 +14,5 @@ if true:
 son comtroles de flujo que repiten codigo y codigo de sintaxix es la siguiente 
 > para FOR:
 ```python
+
+### white
