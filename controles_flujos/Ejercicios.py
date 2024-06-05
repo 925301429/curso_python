@@ -37,7 +37,7 @@
 
 oraccion:str=input("ingrese una oracion:")
 contador:int=0
-for indice,letra  in enumerastes (oracion):
+for indice,letra  in enumeraste (oracion):
   if letra ==",":
    print (f"su indice es {indice}")
 contador+=1
@@ -53,7 +53,7 @@ for i in range(1,edad + 1):
 # mostrar por pantalla la bariable global con las tres ultimas letras  del nombre de cada persona
 ultima_letra:str=""
 for n in range(3):
-  monbre:str=input("escribe tu nombre:")
+  nombre:str=input("escribe tu nombre:")
 #ultima_letra+=nombre[-1]
 last_letter:str=nombre[-1]
 ultima_letra+=last_letter
@@ -81,4 +81,4 @@ for i in range (1,6):
 # crea un programa que pida un numero y que se muestra la tabla de multiplicar de ese numero
 numero:int=int(input("ingrese un numero:"))
 print(" la tabla de multiplicar que escojistes es{numero}")
-for n in range(1,13)
+for i in range(1,13):

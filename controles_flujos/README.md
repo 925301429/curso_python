@@ -16,3 +16,7 @@ son comtroles de flujo que repiten codigo y codigo de sintaxix es la siguiente
 ```python
 
 ### white
+ es un mecanismo que usa `python`para repetir instrucciones ,la semantica de esta sentencia es :`miestras se cumpla la condicion has algo`
+ ```python
+ while ():
+    print("hola")

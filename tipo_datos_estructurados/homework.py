@@ -74,53 +74,56 @@
 # # casos de uso
 # # programacion
 
-# # Clase para representar un vehículo
 
-#Clase para representar un vehículo
-class Vehiculo:
-    pass
+# #Clase para representar un vehículo
+# class Vehiculo:
+#     pass
 
-# Base de datos de vehículos
-base_de_datos_vehiculos = []
+# # Base de datos de vehículos
+# base_de_datos_vehiculos = []
 
-# Crear algunos vehículos de ejemplo
-vehiculo1 = Vehiculo()
-vehiculo1.marca = "Toyota"
-vehiculo1.modelo = "Corolla"
-vehiculo1.año = 2020
+# # Crear algunos vehículos de ejemplo
+# vehiculo1 = Vehiculo()
+# vehiculo1.marca = "Toyota"
+# vehiculo1.modelo = "Corolla"
+# vehiculo1.año = 2020
 
-vehiculo2 = Vehiculo()
-vehiculo2.marca = "Honda"
-vehiculo2.modelo = "Civic"
-vehiculo2.año = 2022
-3.
+# vehiculo2 = Vehiculo()
+# vehiculo2.marca = "Honda"
+# vehiculo2.modelo = "Civic"
+# vehiculo2.año = 2022
+# 3.
 
-# Agregar los vehículos a la base de datos
-base_de_datos_vehiculos.append(vehiculo1)
-base_de_datos_vehiculos.append(vehiculo2)
+# # Agregar los vehículos a la base de datos
+# base_de_datos_vehiculos.append(vehiculo1)
+# base_de_datos_vehiculos.append(vehiculo2)
 
-# Ver la lista de autos
-for vehiculo in base_de_datos_vehiculos:
-    print(f"Marca: {vehiculo.marca}, Modelo: {vehiculo.modelo}, Año: {vehiculo.año}")
+# # Ver la lista de autos
+# for vehiculo in base_de_datos_vehiculos:
+#     print(f"Marca: {vehiculo.marca}, Modelo: {vehiculo.modelo}, Año: {vehiculo.año}")
 
-# Actualizar la lista de autos
-vehiculo1.modelo = "Camry"
-print("Lista de autos actualizada:")
+# # Actualizar la lista de autos
+# vehiculo1.modelo = "Camry"
+# print("Lista de autos actualizada:")
 
-# Ver la lista actualizada de autos
-for vehiculo in base_de_datos_vehiculos:
-    print(f"Marca: {vehiculo.marca}, Modelo: {vehiculo.modelo}, Año: {vehiculo.año}")
+# # Ver la lista actualizada de autos
+# for vehiculo in base_de_datos_vehiculos:
+#     print(f"Marca: {vehiculo.marca}, Modelo: {vehiculo.modelo}, Año: {vehiculo.año}")
 
-# Agregar un nuevo vehículo
-nuevo_vehiculo = Vehiculo()
-nuevo_vehiculo.marca = "Ford"
-nuevo_vehiculo.modelo = "Mustang"
-nuevo_vehiculo.año = 2023
+# # Agregar un nuevo vehículo
+# nuevo_vehiculo = Vehiculo()
+# nuevo_vehiculo.marca = "Ford"
+# nuevo_vehiculo.modelo = "Mustang"
+# nuevo_vehiculo.año = 2023
 
-base_de_datos_vehiculos.append(nuevo_vehiculo)
-print("Nuevo vehículo agregado a la lista:")
+# base_de_datos_vehiculos.append(nuevo_vehiculo)
+# print("Nuevo vehículo agregado a la lista:")
 
-# Ver la lista actualizada con el nuevo vehículo
-for vehiculo in base_de_datos_vehiculos:
-    print(f"Marca: {vehiculo.marca}, Modelo: {vehiculo.modelo}, Año: {vehiculo.año}")
+# # Ver la lista actualizada con el nuevo vehículo
+# for vehiculo in base_de_datos_vehiculos:
+#     print(f"Marca: {vehiculo.marca}, Modelo: {vehiculo.modelo}, Año: {vehiculo.año}")
 
+    #crea una lista usando de los primeros 20 numeros primos hasiendo usos de comprencion
+# unción para verificar si un número es primo
+numeros_primos = [2] + [x for x in range(3, 73, 2) if all(x % y != 0 for y in range(3, int(x ** 0.5) + 1, 2))]
+print(numeros_primos)

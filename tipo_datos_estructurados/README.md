@@ -99,5 +99,21 @@ alumnos[0]={"nombre":"mafer","edad":15 }
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
+### 8. lists y diccionarios por comprencion
+  es una tecnica pythonica nos pernite crear listas y diccionarios en una sola linea combinando bucles y deciciones.
+  >[!NOTE]
+> **vlc** value loop condiciones - valor bucle condicion
+```python
+#lista
+texto="1,4,8,9,6"
+nueva_lista=[]
+for n in texto.split(","):
+    nueva_lista.append(int(n))
+print(nueva_lista)
+#aplicando la tecnica valor bucle y condicion
+texto="1,4,8,9,6"
+nueva_lista=[int(n)for n in texto.split(",")if (n)%2==0]
+print(nueva_lista)
+```
 
 
