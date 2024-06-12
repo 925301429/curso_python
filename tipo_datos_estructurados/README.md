@@ -99,7 +99,7 @@ alumnos[0]={"nombre":"mafer","edad":15 }
 alumnos[1]["sexo"]="por definir"
 print(alumnos)
 ```
-### 8. lists y diccionarios por comprencion
+### 8. listas y diccionarios por comprencion
   es una tecnica pythonica nos pernite crear listas y diccionarios en una sola linea combinando bucles y deciciones.
   >[!NOTE]
 > **vlc** value loop condiciones - valor bucle condicion

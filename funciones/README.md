@@ -1,5 +1,5 @@
 # FUNCIONES
-## concepto
+## Concepto
 matematicamente una funcion es una operacion que toma uno o mas valores llamados `argumentos`y produce un valor denominado`resultado`.
 f(x)=x/1+x**2
 >[NOTE]
@@ -41,7 +41,7 @@ def uno():
     uno()
 ```
 >[!WARNING]
-> No confundir`return`. el valor retorno por `return` nos permite usarlo fuera de su contexto. y `print()` solo mostrara el literal por terminal.
+> No confundir`return`. el valor retorno por `return` nos pe♠rmite usarlo fuera de su contexto. y `print()` solo mostrara el literal por terminal.
 **ejemplo**
 *en el ejemplo`lecture.py`
 ## Retornando multiples valores
@@ -57,6 +57,90 @@ def lista():
     def dicc():
         return{"nombre":"jose","edad":45}
          dicc()
-            #return{"nombre":"jose","edad":45}
-         
+#retorna{"nombre":"jose","edad":45}
 ```
+## Parametros y argumentos
+ si una funcion nos dispuciera de valores de entrada estaria limitada en su actuacion.
+ es por ello que los `parametros` nos permiten variar los datos que consume una funcion para optener distintos resultados
+ **ejemplo**
+*crear una funcion para recivir un valor numerico y disminuye su raiz cuadrada*
+
+  ```python
+  def sqrt(valor):
+    return valor**(1/2)
+# NOTA: en este caso, el valor 4 es un argumento  de la funcion
+    sqrt(4)
+ ```
+cuando llamamos a una funcion con`argumentos`, los valores de estos argumentos  se copian en los correspondientemente`parametros` dentro fe la funcion.
+```python
+def ejem(a,b,c):
+    return a+b+c
+    ejem(4,5,6)
+```
+### Argumentos nominales
+En esta aproximacion los argumentos no son copiados en un orden especifico si no que **asignan por nombre a cada parametro**. Ello nos permiten evitar el proiblema de conocer cual es el orden de los parametros de la definicion de la funcion.Para utilizarlo, basta con realizar una asignacion de cada argumentos en la propia llanmada ala funcion.
+**ejemplo**
+```python
+def builld_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es la familia{familia},con{num_core} cores y con una
+     frecuencia de{frecuencia}
+  """  )
+  # haciendos uso de argumentos nominales
+  builld_cpu(num_core=4,familia="intel",frecuencia=2.7)
+  builld_cpu("intel",4,2,7)
+```
+### Argumentos posicionales
+los argumentos no son copiados en un orden especifico , en easte caso devemos conocer o recordar cual es el orden de los parametros
+**ejemplo**
+```python
+def builld_cpu(familia,num_core,frecuencia):
+    print(f"""
+    la cpu es la familia{familia},con{num_core} cores y con una
+     frecuencia de{frecuencia}
+  """  )
+  # haciendos uso de argumentos nominales
+  builld_cpu(num_core=4,familia="intel",frecuencia=2.7)
+  builld_cpu("intel",4,2,7)
+  ```
+### Parametros por defecto
+Es posible especificar **valores por defecto** en los parametros de una funcion , en el caso de que nose proporcione un valor argumenti en la llamada  ala funcion el parametro correspondiente tomaran el valor definido por defecto.
+**ejemplo**
+```python
+def alumnos(nom,app,estado=aprobado):
+    alumno("ruth","castillo")
+    alumno("anthony","crucez","desaprovado")
+```
+## Desempaquetado/Empaquetado de argumentos(tarea)
+
+ython nos ofrece la posibilidad de empaquetar y desempaquetar argumentos cuando estamos invocando a una función, tanto para argumentos posicionales como para argumentos nominales.Y de esto se deriva el hecho de que podamos utilizar un número variable de argumentos en una función, algo que puede ser muy interesante según el caso de uso que tengamos.
+**ejemplo**
+```python
+def _sum(*values):
+    print(f'{values=}')
+    result = 0
+    for value in values:  # values es una tupla
+        result += value
+    return result
+sum(4, 3, 2, 1)
+values=(4, 3, 2, 1)
+10
+
+```
+## Funcion internas de python(tarea)
+son aquellas que están integradas en el lenguaje y están disponibles para su uso sin necesidad de importar ningún módulo adicional. Estas funciones están diseñadas para realizar tareas comunes y están optimizadas para un rendimiento óptimo.
+**ejemplo**
+- print(): Utilizada para imprimir texto o variables en la consola.
+- len(): Devuelve la longitud (número de elementos) de un objeto iterable como una cadena, lista, tupla, diccionario, etc.
+- input(): Lee una entrada del usuario desde la consola.
+- type(): Devuelve el tipo de un objeto.
+- range(): Genera una secuencia de números.
+- int(), float(), str(), list(), tuple(), dict(), etc.: Utilizadas para convertir objetos a tipos específicos.
+- sum(): Devuelve la suma de los elementos de un iterable.
+- max(), min(): Devuelven el valor máximo y mínimo de un iterable, respectivamente.
+- abs(): Devuelve el valor absoluto de un número.
+- round(): Redondea un número al entero más cercano.
+- sorted(): Ordena los elementos de un iterable.
+- enumerate(): Devuelve un iterable de pares índice-valor.
+- zip(): Combina iterables en una sola secuencia de tuplas.
+
