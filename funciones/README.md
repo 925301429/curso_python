@@ -113,7 +113,7 @@ def alumnos(nom,app,estado=aprobado):
 ```
 ## Desempaquetado/Empaquetado de argumentos(tarea)
 
-ython nos ofrece la posibilidad de empaquetar y desempaquetar argumentos cuando estamos invocando a una función, tanto para argumentos posicionales como para argumentos nominales.Y de esto se deriva el hecho de que podamos utilizar un número variable de argumentos en una función, algo que puede ser muy interesante según el caso de uso que tengamos.
+python nos ofrece la posibilidad de empaquetar y desempaquetar argumentos cuando estamos invocando a una función, tanto para argumentos posicionales como para argumentos nominales.Y de esto se deriva el hecho de que podamos utilizar un número variable de argumentos en una función, algo que puede ser muy interesante según el caso de uso que tengamos.
 **ejemplo**
 ```python
 def _sum(*values):
@@ -143,4 +143,10 @@ son aquellas que están integradas en el lenguaje y están disponibles para su u
 - sorted(): Ordena los elementos de un iterable.
 - enumerate(): Devuelve un iterable de pares índice-valor.
 - zip(): Combina iterables en una sola secuencia de tuplas.
+ 
+ ## tipos de funciones
+ ### funciones  anonimas(funciones lambda)
+ ### funciones closure
+ ### Funciones callback
+ ### Programacion funcional
 
