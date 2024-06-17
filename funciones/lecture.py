@@ -103,6 +103,5 @@ print(f"La suma de los números es: {suma}")
 def alumnos(**kwargs):
     print(kwargs)
     alumnos(nombre="miguel",apellido="largo",edad=30)
-    
 
 
