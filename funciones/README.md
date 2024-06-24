@@ -146,7 +146,38 @@ son aquellas que están integradas en el lenguaje y están disponibles para su u
  
  ## tipos de funciones
  ### funciones  anonimas(funciones lambda)
+ una funcion que no tiene nombre
+ ```python
+ lambada:"hola"
+ # normal
+ def saludo():
+    retur
+ ```
  ### funciones closure
+ una funcion que dentro tiene otra  funcion
  ### Funciones callback
  ### Programacion funcional
+ la programacion funcional no requiere que sepas como se desarrollo y ejecuta el procemiento
+ **ejemplo**
+ ```python
+ lista=[5,7,8,4,1]
+ def num_minimo(l):
+    minimo=[0]
+    for n in l:
+        if n < minimo:
+            minimo=n
+            return minimo
+ #programacion funcional
+ min(lista)
+ ```
+ #### Averiguar sobre map(),filter(),reduce()
+ Map, reduce y filter son todos métodos de arreglo en JavaScript. Cada uno iterará sobre un arreglo y realizará una transformación o cálculo. Cada uno devolverá un nuevo arreglo basado en el resultado de la función. En este artículo, aprenderás por qué y cómo usar cada uno de ellos.
+## MAP
+El método map() se utiliza para crear un nuevo arreglo a partir de una existente, aplicando una función a cada uno de los elementos de la primera arreglo.
+**ejemplo**
+```python
+const numeros = [1, 2, 3, 4];
+const duplicar = numeros.map(elemento => elemento * 2);
+console.log(duplicar); // [2, 4, 6, 8]
+```
 
