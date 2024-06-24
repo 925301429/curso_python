@@ -76,32 +76,49 @@
 #calcular el numero menor
 # calcular el numero mayor
 # calcular la suma de todos los numeros
-#se le pasara por argumento n numeros
+# #se le pasara por argumento n numeros
 
-def calcular_menor(*numeros):
-    if not numeros:
-        return None
-    return min(numeros)
-def calcular_mayor(*numeros):
-    if not numeros:
-        return None
-    return max(numeros)
-def calcular_suma(*numeros):
-    return sum(numeros)
-# Ejemplo de uso
-numeros = [5, 3, 8, 1, 2]
+# def calcular_menor(*numeros):
+#     if not numeros:
+#         return None
+#     return min(numeros)
+# def calcular_mayor(*numeros):
+#     if not numeros:
+#         return None
+#     return max(numeros)
+# def calcular_suma(*numeros):
+#     return sum(numeros)
+# # Ejemplo de uso
+# numeros = [5, 3, 8, 1, 2]
 
-menor = calcular_menor(*numeros)
-mayor = calcular_mayor(*numeros)
-suma = calcular_suma(*numeros)
+# menor = calcular_menor(*numeros)
+# mayor = calcular_mayor(*numeros)
+# suma = calcular_suma(*numeros)
 
-print(f"El número menor es: {menor}")
-print(f"El número mayor es: {mayor}")
-print(f"La suma de los números es: {suma}")
+# print(f"El número menor es: {menor}")
+# print(f"El número mayor es: {mayor}")
+# print(f"La suma de los números es: {suma}")
 
-#empaqueta y desempaqueta de argumentos nominales
-def alumnos(**kwargs):
-    print(kwargs)
-    alumnos(nombre="miguel",apellido="largo",edad=30)
+# #empaqueta y desempaqueta de argumentos nominales
+# def alumnos(**kwargs):
+#     print(kwargs)
+#     alumnos(nombre="miguel",apellido="largo",edad=30)
 
+# ## ejemplo lambda
+# saludo=lambda n:f"hola,{n},{a}"
+# print(saludo("ruth","castillo"))
 
+# crear un programa anonimo que reciba como parametro una lista de 5 numero y retorne dos listas una con los numeros pares y otra 
+# con numeros impares
+lista=[4,7,8,47,2,10,8,10]
+pares=lambda l:[n for n in lista if n%2==0]
+impares=lambda l:[n for n in lista if n%2!=0]
+print(pares(lista))
+print(impares(lista))
+int(input())
+def mensaje(m):
+    print(m)
+def pedir_monbre():
+    nombre=input("ingresa tu nombre")
+    return nombre 
+mensaje(pedir_nombre())
