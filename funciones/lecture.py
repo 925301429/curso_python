@@ -110,15 +110,54 @@
 
 # crear un programa anonimo que reciba como parametro una lista de 5 numero y retorne dos listas una con los numeros pares y otra 
 # con numeros impares
-lista=[4,7,8,47,2,10,8,10]
-pares=lambda l:[n for n in lista if n%2==0]
-impares=lambda l:[n for n in lista if n%2!=0]
-print(pares(lista))
-print(impares(lista))
-int(input())
-def mensaje(m):
-    print(m)
-def pedir_monbre():
-    nombre=input("ingresa tu nombre")
-    return nombre 
-mensaje(pedir_nombre())
+# lista=[4,7,8,47,2,10,8,10]
+# pares=lambda l:[n for n in lista if n%2==0]
+# impares=lambda l:[n for n in lista if n%2!=0]
+# print(pares(lista))
+# print(impares(lista))
+# int(input())
+# def mensaje(m):
+#     print(m)
+# def pedir_monbre():
+#     nombre=input("ingresa tu nombre")
+#     return nombre 
+# mensaje(pedir_nombre())
+
+# map
+lista=[4,7,8,5,2]
+nueva_lista =list (map(lambda x:x+1,lista)) # por defecto retorna una  lista
+print(nueva_lista)
+
+# tengo una lista de alumnos que todos esllos aprovaron y pasan el tercer semestre,
+#problema en mi lista todos estan con el segundo semestre por lo que tenemos que crear una solucion que cambie el campo de semestrede 2 a 3
+lista_alumnos=[
+    
+    { "nombre":"abel",
+     "edad":36,
+     "semestre":2
+    },
+    {
+        "nombre":"antohny",
+        "edad":40,
+        "semestre":2
+    },
+    {
+        "nombre":"edith",
+        "edad":50,
+        "semestre":2
+    }
+]
+def objeto(e):
+    if "semestre" in e:
+        e["semestre"]=e["semestre"]+1
+    return [
+        e
+    ]
+# alumnos_actualizados=list(map(objeto,lista_alumnos))
+# print(alumnos_actualizados)
+
+#filter
+# devolver los numeros pares de una lista
+lista=[4,8,2,5,7,10,6,5,3,20]
+nueva_lista=list(filter(lambda x:x%2==0,lista))
+print(nueva_lista)
