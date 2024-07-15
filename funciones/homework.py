@@ -39,5 +39,5 @@ for idx, alumno in enumerate(alumnos_filtrados, start=1):
     print(f"Celular: {alumno['celular']}")
     print(f"Email: {alumno['email']}")
     print(f"Programa de estudios: {alumno['programa_de_estudios']}")
-    print()
+    
 
