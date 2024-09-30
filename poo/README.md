@@ -10,7 +10,7 @@ existem 2 pilas mas que a este nivel que estan mia alumnitosvan a pujar
 existen dos que a nivel educativo no es necesario aprenderlo.
 5. acoplamiento
 6. cohecion
-7. 
+   
 ## Que es un objeto
 un `objeto`es un tipo de dato estructurado que contiene o almacena `datos`y`codigo`.
 |elementos |que son |como se llama| como se identifica |
