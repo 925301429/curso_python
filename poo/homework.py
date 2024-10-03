@@ -3,7 +3,7 @@
 #como metodos podremos hacer depositos retirar dinero y ver estado de cuenta.
  
 class Bancos:
-    def _init_(self, nombre, apellidos, DNI, numero_de_cuenta, saldo_inicial):
+    def __init__(self, nombre, apellidos, DNI, numero_de_cuenta, saldo_inicial):
         self.nombre = nombre
         self.apellidos = apellidos
         self.DNI = DNI
