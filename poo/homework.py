@@ -27,17 +27,17 @@ class Bancos:
         print(f"Número de cuenta: {self.numero_de_cuenta}")
         print(f"Saldo actual: {self.saldo_inicial}")
         cuenta = Bancos("Juan", "Pérez", "123456780A", "1234567890", 1000)
-cuenta = Bancos("Juan", "Pérez", "12345678A", "1234567890", 1000)
-cuenta.depositar(500)
-cuenta.retirar(200)
-cuenta.ver_estado_de_cuenta()
+# cuenta = Bancos("Juan", "Pérez", "12345678A", "1234567890", 1000)
+# cuenta.depositar(500)
+# cuenta.retirar(200)
+# cuenta.ver_estado_de_cuenta()
 
 #ejercicio 02
 #crear una clase agencia
 #con sus atributos nombre y apellido del pasajero dni9 numero de aciento fecha de viaje
 #sus metodos seran ingresar origen,ingresar destino,canselar viaje, ver estados
 class Agencia:
-    def _init_(self, nombre, apellidos, DNI, numero_de_asientos, fecha_de_viaje):
+    def __init__(self, nombre, apellidos, DNI, numero_de_asientos, fecha_de_viaje):
         self.nombre = nombre
         self.apellidos = apellidos
         self.DNI = DNI
@@ -67,9 +67,10 @@ class Agencia:
         print(f"Origen: {self.origen}")
         print(f"Destino: {self.destino}")
         print(f"Cancelado: {self.cancelado}")
-        viaje = Agencia("Ana", "García", "78901234Z", 2, "2023-12-25")
-        viaje.ingresar_origen("Madrid")
-        viaje.ingresar_destino("Barcelona")
-        viaje.ver_estado()
-        viaje.cancelar_viaje()
-        viaje.ver_estado()
+viaje = Agencia("Ana", "García", "78901234Z", 2, "2023-12-25")
+viaje.ingresar_origen("Madrid")
+viaje.ingresar_destino("Barcelona")
+        
+viaje.ver_estado()
+viaje.cancelar_viaje()
+viaje.ver_estado()
